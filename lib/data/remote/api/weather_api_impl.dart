@@ -63,7 +63,8 @@ import 'package:weather_wizard/data/remote/api/weather_api.dart';
 import 'package:weather_wizard/data/remote/dto/daily_weather_dto.dart';
 import 'package:weather_wizard/data/remote/dto/hourly_weather_dto.dart';
 
-const apiKey = "cacf0ef7a81442af908ec209efbd4d33";
+import '../../../core/utils/config.dart';
+
 
 class WeatherApiImpl {
   final WeatherApi _weatherApi;
@@ -72,7 +73,7 @@ class WeatherApiImpl {
 
   Future<DailyWeatherDto> getDailyWeather(String city) async {
     try {
-      return await _weatherApi.getDailyWeather(city, apiKey);
+      return await _weatherApi.getDailyWeather(city, Config.apiKey);
     } catch (e, stackTrace) {
       log('An error has occurred in getDailyWeather: $e\n$stackTrace');
       throw Exception("An error has occurred in getDailyWeather: $e\n$stackTrace");
@@ -81,7 +82,7 @@ class WeatherApiImpl {
 
   Future<HourlyWeatherDto> getHourlyWeather(String city) async {
     try {
-      return await _weatherApi.getHourlyWeather(city, apiKey);
+      return await _weatherApi.getHourlyWeather(city, Config.apiKey);
     } catch (e, stackTrace) {
       log('An error has occurred in getHourlyWeather: $e\n$stackTrace');
       throw Exception("An error has occurred in getHourlyWeather: $e\n$stackTrace");
