@@ -10,7 +10,7 @@
 
 - 📸 See this video for a complete demo of the app :
 
-(not available yet :/)
+https://drive.google.com/file/d/1zDEIAKKPzmgSd4-I5AdXvz-nQReCRQ0S/view?usp=sharing
 
 # 🤔 What did I learn of this project :
 
