@@ -86,7 +86,7 @@ class MainScreen extends GetView<MainScreenController> {
                               child: Text(
                                   DateFormat('EEEE, dd MMMM yyyy').format(DateTime.now()),
                                   style: GoogleFonts.montserrat(
-                                      fontSize: 30,
+                                      fontSize: 25,
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold
                                   )
